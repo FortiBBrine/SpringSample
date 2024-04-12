@@ -2,5 +2,9 @@
 rootProject.name = "SpringSample"
 include(
     "first",
-    "IoC"
+    "IoC",
+    "DIFirst",
+    "DISetter",
+    "BeanScope",
+    "BeanLifecycle"
 )
