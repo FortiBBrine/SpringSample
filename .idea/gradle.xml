@@ -9,11 +9,16 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AnnotationsFirst" />
+            <option value="$PROJECT_DIR$/Autowired" />
             <option value="$PROJECT_DIR$/BeanLifecycle" />
             <option value="$PROJECT_DIR$/BeanScope" />
+            <option value="$PROJECT_DIR$/Configuration" />
             <option value="$PROJECT_DIR$/DIFirst" />
             <option value="$PROJECT_DIR$/DISetter" />
             <option value="$PROJECT_DIR$/IoC" />
+            <option value="$PROJECT_DIR$/OtherAnnotations" />
+            <option value="$PROJECT_DIR$/Qualifier" />
             <option value="$PROJECT_DIR$/first" />
           </set>
         </option>

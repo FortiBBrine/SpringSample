@@ -6,5 +6,10 @@ include(
     "DIFirst",
     "DISetter",
     "BeanScope",
-    "BeanLifecycle"
+    "BeanLifecycle",
+    "AnnotationsFirst",
+    "Autowired",
+    "Qualifier",
+    "OtherAnnotations",
+    "Configuration"
 )
