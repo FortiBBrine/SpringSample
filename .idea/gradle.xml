@@ -17,6 +17,9 @@
             <option value="$PROJECT_DIR$/DIFirst" />
             <option value="$PROJECT_DIR$/DISetter" />
             <option value="$PROJECT_DIR$/IoC" />
+            <option value="$PROJECT_DIR$/MVCController" />
+            <option value="$PROJECT_DIR$/MVCFirst" />
+            <option value="$PROJECT_DIR$/MVCJavaConfig" />
             <option value="$PROJECT_DIR$/OtherAnnotations" />
             <option value="$PROJECT_DIR$/Qualifier" />
             <option value="$PROJECT_DIR$/first" />

@@ -11,5 +11,8 @@ include(
     "Autowired",
     "Qualifier",
     "OtherAnnotations",
-    "Configuration"
+    "Configuration",
+    "MVCFirst",
+    "MVCJavaConfig",
+    "MVCController"
 )

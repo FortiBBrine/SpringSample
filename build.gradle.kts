@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.9.23" apply false
+    id("war")
 }
 
 subprojects {
@@ -7,6 +8,7 @@ subprojects {
     apply {
         plugin("org.jetbrains.kotlin.jvm")
         plugin("application")
+        plugin("war")
     }
 
     repositories {
