@@ -14,5 +14,8 @@ include(
     "Configuration",
     "MVCFirst",
     "MVCJavaConfig",
-    "MVCController"
+    "MVCController",
+    "MVCRequestParam",
+    "MVCModel",
+    "MVCCRUD"
 )
