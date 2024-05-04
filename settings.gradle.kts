@@ -17,5 +17,9 @@ include(
     "MVCController",
     "MVCRequestParam",
     "MVCModel",
-    "MVCCRUD"
+    "MVCCRUD",
+    "MVCCRUDModelAttribute",
+    "MVCCRUDPatchDelete",
+    "MVCValidForms",
+    "MVCDatabase"
 )

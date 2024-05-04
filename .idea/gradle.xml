@@ -18,11 +18,15 @@
             <option value="$PROJECT_DIR$/DISetter" />
             <option value="$PROJECT_DIR$/IoC" />
             <option value="$PROJECT_DIR$/MVCCRUD" />
+            <option value="$PROJECT_DIR$/MVCCRUDModelAttribute" />
+            <option value="$PROJECT_DIR$/MVCCRUDPatchDelete" />
             <option value="$PROJECT_DIR$/MVCController" />
+            <option value="$PROJECT_DIR$/MVCDatabase" />
             <option value="$PROJECT_DIR$/MVCFirst" />
             <option value="$PROJECT_DIR$/MVCJavaConfig" />
             <option value="$PROJECT_DIR$/MVCModel" />
             <option value="$PROJECT_DIR$/MVCRequestParam" />
+            <option value="$PROJECT_DIR$/MVCValidForms" />
             <option value="$PROJECT_DIR$/OtherAnnotations" />
             <option value="$PROJECT_DIR$/Qualifier" />
             <option value="$PROJECT_DIR$/first" />
