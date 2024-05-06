@@ -25,7 +25,10 @@ class MySpringMvcDispatcherServletInitializer: AbstractAnnotationConfigDispatche
         ).addMappingForUrlPatterns(null, true, "/*")
     }
 
-    override fun getServletConfigClasses(): Array<Class<*>>? {
-        return arrayOf(SpringConfig::class.java)
+    override fun getServletConfigClasses(): Array<Class<*>> {
+        return arrayOf(
+            SpringConfig::class.java,
+            JpaConfig::class.java
+        )
     }
 }

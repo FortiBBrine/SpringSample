@@ -1,13 +1,12 @@
 package me.fortibrine.springsample.controller
 
 import javax.validation.Valid
+import me.fortibrine.springsample.service.PersonService
 import me.fortibrine.springsample.models.Person
-import me.fortibrine.springsample.service.PersonDAO
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.validation.BindingResult
-import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.ModelAttribute
@@ -19,12 +18,12 @@ import org.springframework.web.bind.annotation.RequestMapping
 @Controller
 @RequestMapping("/people")
 class PeopleController @Autowired constructor(
-    private val personDAO: PersonDAO
+    private val personService: PersonService
 ) {
 
     @GetMapping("")
     fun index(model: Model): String {
-        model.addAttribute("people", personDAO.getPeople())
+        model.addAttribute("people", personService.getPeople())
         return "people/index"
     }
 
@@ -33,17 +32,13 @@ class PeopleController @Autowired constructor(
         @PathVariable("id") id: Int,
         model: Model
     ): String {
-        model.addAttribute("person", personDAO.personById(id))
+        model.addAttribute("person", personService.personById(id))
         return "people/show"
     }
 
-//    @GetMapping("/new")
-//    fun newPerson(model: Model): String {
-//        model.addAttribute("person", Person())
     @GetMapping("/new")
-    fun newPerson(
-        @ModelAttribute("person") person: Person
-    ): String {
+    fun newPerson(model: Model): String {
+        model.addAttribute("person", Person())
         return "people/new"
     }
 
@@ -56,9 +51,11 @@ class PeopleController @Autowired constructor(
         bindingResult: BindingResult
     ): String {
 
-        if (bindingResult.hasErrors()) return "people/new"
+        if (bindingResult.hasErrors()) {
+            return "people/new"
+        }
 
-        personDAO.save(person)
+        personService.save(person)
         return "redirect:/people"
     }
 
@@ -67,7 +64,7 @@ class PeopleController @Autowired constructor(
         model: Model,
         @PathVariable("id") id: Int
     ): String {
-        model.addAttribute("person", personDAO.personById(id))
+        model.addAttribute("person", personService.personById(id))
         return "people/edit"
     }
 
@@ -86,7 +83,7 @@ class PeopleController @Autowired constructor(
             return "people/edit"
         }
 
-        personDAO.update(id, person)
+        personService.update(id, person)
         return "redirect:/people"
     }
 
@@ -94,7 +91,7 @@ class PeopleController @Autowired constructor(
     fun delete(
         @PathVariable("id") id: Int
     ): String {
-        personDAO.delete(id)
+        personService.delete(id)
         return "redirect:/people"
     }
 
