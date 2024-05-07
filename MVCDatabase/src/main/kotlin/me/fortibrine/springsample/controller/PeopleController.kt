@@ -77,8 +77,6 @@ class PeopleController @Autowired constructor(
         bindingResult: BindingResult
     ): String {
 
-        println(bindingResult.hasErrors())
-
         if (bindingResult.hasErrors()) {
             return "people/edit"
         }
