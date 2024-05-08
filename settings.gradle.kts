@@ -21,5 +21,6 @@ include(
     "MVCCRUDModelAttribute",
     "MVCCRUDPatchDelete",
     "MVCValidForms",
-    "MVCDatabase"
+    "MVCDatabase",
+    "MVCRest"
 )
