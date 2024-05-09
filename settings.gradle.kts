@@ -22,5 +22,6 @@ include(
     "MVCCRUDPatchDelete",
     "MVCValidForms",
     "MVCDatabase",
-    "MVCRest"
+    "MVCRest",
+    "BootSecurityFirst"
 )

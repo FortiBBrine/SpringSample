@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/Autowired" />
             <option value="$PROJECT_DIR$/BeanLifecycle" />
             <option value="$PROJECT_DIR$/BeanScope" />
+            <option value="$PROJECT_DIR$/BootSecurityFirst" />
             <option value="$PROJECT_DIR$/Configuration" />
             <option value="$PROJECT_DIR$/DIFirst" />
             <option value="$PROJECT_DIR$/DISetter" />
