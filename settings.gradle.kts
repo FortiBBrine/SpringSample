@@ -23,5 +23,6 @@ include(
     "MVCValidForms",
     "MVCDatabase",
     "MVCRest",
-    "BootSecurityFirst"
+    "BootSecurityFirst",
+    "MyBootSecurity"
 )

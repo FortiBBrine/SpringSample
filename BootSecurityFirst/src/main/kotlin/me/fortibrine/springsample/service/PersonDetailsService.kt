@@ -14,7 +14,7 @@ class PersonDetailsService @Autowired constructor(
     private val peopleRepository: PeopleRepository
 ): UserDetailsService {
 
-    override fun loadUserByUsername(s: String): UserDetails? {
+    override fun loadUserByUsername(s: String): UserDetails {
         val person = peopleRepository.findByUsername(s).getOrNull() ?: throw UsernameNotFoundException("User not found!")
 
         return PersonDetails(person)

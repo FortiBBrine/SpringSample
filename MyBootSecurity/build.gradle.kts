@@ -21,6 +21,7 @@ dependencies {
 
 //    implementation("com.mysql:mysql-connector-j:8.4.0")
     implementation("org.mariadb.jdbc:mariadb-java-client:3.3.3")
+    implementation("com.github.javafaker:javafaker:1.0.2")
 
 }
 
